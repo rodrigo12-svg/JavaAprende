@@ -16,6 +16,7 @@ public class TablaMultiplicar {
         // Iniciamos en 1; repetimos mientras sea menor o igual a 10; aumentamos de 1 en 1
         for (int i = 1; i <= 10; i++) {
             System.out.println(numero + " x " + i + " = " + (numero * i));
+            entrada.close();
         }
     }
 }

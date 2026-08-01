@@ -1,14 +1,19 @@
-/**
- * Reto 12: Las cuatro operaciones
- * Descripción: Recibir dos números y mostrar suma, resta, multiplicación y división.
- */
 import java.util.Scanner;
-
-public class OperacionesBasicas {
-    public static void main(String[] args) {
-        Scanner teclado = new Scanner(System.in);
-        // TODO: Solicitar dos números
-        // TODO: Calcular y mostrar suma, resta, multiplicación
-        // TODO: Calcular y mostrar división (Validar que el divisor no sea 0 si es posible)
-    }
+public class OperacionesBasicas{
+public static void main(String[]args){
+Scanner teclado=new Scanner(System.in);
+System.out.print("Ingresa el primer numero: ");
+double n1=teclado.nextDouble();
+System.out.print("Ingresa el segundo numero: ");
+double n2=teclado.nextDouble();
+System.out.println("Suma: "+(n1+n2));
+System.out.println("Resta: "+(n1-n2));
+System.out.println("Multiplicacion: "+(n1*n2));
+if(n2!=0){
+System.out.println("Division: "+(n1/n2));
+}else{
+System.out.println("No se puede dividir entre cero");
+}
+teclado.close();
+}
 }

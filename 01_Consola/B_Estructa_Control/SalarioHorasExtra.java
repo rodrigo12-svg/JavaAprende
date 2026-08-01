@@ -1,14 +1,17 @@
-/**
- * Reto 5: Salario con Horas Extra
- * Descripción: Primeras 40 horas a $14, horas extra a $26.
- */
 import java.util.Scanner;
-
-public class SalarioHorasExtra {
-    public static void main(String[] args) {
-        Scanner teclado = new Scanner(System.in);
-        // TODO: Solicitar horas trabajadas
-        // TODO: Validar si superan las 40. Si sí, separar horas normales y extras.
-        // TODO: Calcular el pago total y mostrarlo
-    }
+public class SalarioHorasExtra{
+public static void main(String[]args){
+Scanner teclado=new Scanner(System.in);
+System.out.print("Ingresa las horas trabajadas: ");
+double horas=teclado.nextDouble();
+double salarioTotal;
+if(horas>40){
+double horasExtras=horas-40;
+salarioTotal=(40*14)+(horasExtras*26);
+}else{
+salarioTotal=horas*14;
+}
+System.out.println("El salario total es: $"+salarioTotal);
+teclado.close();
+}
 }

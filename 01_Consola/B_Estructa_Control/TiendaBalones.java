@@ -23,5 +23,6 @@ public class TiendaBalones {
         
         int total = cantidad * precioUnitario;
         System.out.println("El costo total por " + cantidad + " balones es: $" + total);
+        entrada.close();
     }
 }

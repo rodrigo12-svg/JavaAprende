@@ -9,5 +9,6 @@ public class AreaTriangulo {
         double altura = teclado.nextDouble();
         double area = (base * altura) / 2;
         System.out.println("El area es: " + area);
+        teclado.close();
     }
 }

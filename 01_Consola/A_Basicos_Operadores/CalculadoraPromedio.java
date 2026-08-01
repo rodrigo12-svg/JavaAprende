@@ -24,5 +24,7 @@ public class CalculadoraPromedio {
         double promedio = (cal1 + cal2 + cal3 + cal4) / 4.0;
         
         System.out.println("El promedio exacto es: " + promedio);
+        entrada.close();
+
     }
 }

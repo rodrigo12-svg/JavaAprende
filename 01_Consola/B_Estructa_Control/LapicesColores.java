@@ -1,14 +1,22 @@
-/**
- * Reto 7: Lápices de Colores (Múltiples condiciones)
- * Descripción: Evaluar precio unitario según cantidad comprada.
- */
 import java.util.Scanner;
-
-public class LapicesColores {
-    public static void main(String[] args) {
-        Scanner teclado = new Scanner(System.in);
-        // TODO: Solicitar cantidad de lápices
-        // TODO: >=100 ($0.80), 51-99 ($1.20), 30-50 ($1.50), <30 ($2.10)
-        // TODO: Calcular e imprimir costo total
-    }
+public class LapicesColores{
+public static void main(String[]args){
+Scanner teclado=new Scanner(System.in);
+System.out.print("Ingresa la cantidad de lapices: ");
+int cantidad=teclado.nextInt();
+double precio;
+if(cantidad>=100){
+precio=0.80;
+}else if(cantidad>=51){
+precio=1.20;
+}else if(cantidad>=30){
+precio=1.50;
+}else{
+precio=2.10;
+}
+double total=cantidad*precio;
+System.out.println("Precio unitario: $"+precio);
+System.out.println("Costo total: $"+total);
+teclado.close();
+}
 }

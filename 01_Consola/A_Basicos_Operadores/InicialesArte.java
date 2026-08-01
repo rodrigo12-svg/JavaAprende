@@ -1,9 +1,9 @@
-/**
- * Reto 19: Iniciales en mayúsculas
- * Descripción: Imprimir las iniciales usando letras que formen una figura (ASCII Art).
- */
-public class InicialesArte {
-    public static void main(String[] args) {
-        // TODO: Usar System.out.println() varias veces para dibujar tus iniciales
-    }
+public class InicialesArte{
+public static void main(String[]args){
+System.out.println("RRRR    AAAA   PPPP    AAAA ");
+System.out.println("R   R  A    A  P   P  A    A");
+System.out.println("RRRR   AAAAAA  PPPP   AAAAAA");
+System.out.println("R R    A    A  P      A    A");
+System.out.println("R  R   A    A  P      A    A");
+}
 }
