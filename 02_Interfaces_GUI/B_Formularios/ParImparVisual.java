@@ -20,6 +20,13 @@ public class ParImparVisual extends JFrame {
         etiquetaResultado = new JLabel("Esperando número...");
         
         btnValidar.addActionListener(e -> {
+            int numero = Integer.parseInt(cajaNumero.getText());
+            if (numero % 2 ==0) {
+                etiquetaResultado.setText("El numero "+ numero+ " es par.");
+            
+            } else { 
+                etiquetaResultado.setText("El numero "+ numero + " es impar." );
+            }
             // TODO 1: Obtener el texto de 'cajaNumero' y convertir a int
             // TODO 2: Usar un if/else y el operador módulo (%) para saber si es par
             // TODO 3: Mostrar el resultado en 'etiquetaResultado'

@@ -20,6 +20,11 @@ public class SumaCuadradosVisual extends JFrame {
         etiquetaResultado = new JLabel("Resultado: ---");
         
         btnCalcular.addActionListener(e -> {
+            int resultado = 0;
+            for (int i = 1; i <= 100; i++) {
+                resultado += (i * i);
+            }
+            etiquetaResultado.setText("Resultado: " + resultado);
             // TODO: Declarar variable sumador = 0
             // TODO: Bucle for de 1 a 100 sumando (i * i) al sumador
             // TODO: Mostrar el resultado final en etiquetaResultado

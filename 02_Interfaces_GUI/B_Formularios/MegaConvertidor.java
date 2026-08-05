@@ -30,6 +30,13 @@ public class MegaConvertidor extends JFrame {
                 double valor = Double.parseDouble(cajaEntrada.getText());
                 String seleccion = (String) menuConversiones.getSelectedItem();
                 double resultadoFinal = 0.0;
+                if (seleccion.equals("Celsius a Fahrenheit")) {
+                    resultadoFinal = (valor * 9 / 5) + 32;
+                } else if (seleccion.equals("Pies a Metros")) {
+                    resultadoFinal = valor * 0.3048;
+                } else if (seleccion.equals("Galones a Litros")) {
+                    resultadoFinal = valor * 3.78541;
+                }
                 
                 // TODO: Crea una estructura if/else o switch para evaluar 'seleccion' y calcular 'resultadoFinal'
                 

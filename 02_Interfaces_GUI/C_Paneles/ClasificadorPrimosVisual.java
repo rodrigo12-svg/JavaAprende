@@ -22,6 +22,18 @@ public class ClasificadorPrimosVisual extends JFrame {
         
         btnBuscar.addActionListener(e -> {
             areaResultados.setText("Primos encontrados:\n");
+            for (int i = 2; i <= 100; i++) {
+                boolean esPrimo = true;
+                for (int j = 2; j < i; j++) {
+                    if (i % j == 0) {
+                        esPrimo = false;
+                        break;
+                    }
+                }
+                if (esPrimo) {
+                    areaResultados.append(i + " ");
+                }
+            }
             
             // TODO: Crear ciclo for del 2 al 100
             // TODO: Validar si 'i' es primo

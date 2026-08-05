@@ -23,6 +23,15 @@ public class MayorDeDosVisual extends JFrame {
         etiquetaResultado = new JLabel("Esperando números...");
         
         btnEvaluar.addActionListener(e -> {
+            int num1 = Integer.parseInt(cajaNum1.getText());
+            int num2 = Integer.parseInt(cajaNum2.getText());
+            if (num1>num2) {
+                etiquetaResultado.setText("El mayor es:"+ num1);
+            } else if (num2> num1){
+                etiquetaResultado.setText("El mayor es:"+ num2);
+             } else{
+                    etiquetaResultado.setText("Ambos son iguales.");
+                }
             // TODO 1: Extrae el texto de ambas cajas (getText()) y conviértelos a int
             // TODO 2: Crea un if/else para comparar cuál es mayor
             // TODO 3: Cambia el texto de etiquetaResultado usando .setText("El mayor es...")

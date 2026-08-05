@@ -22,6 +22,15 @@ public class TiendaBalonesVisual extends JFrame {
         etiquetaTotal = new JLabel("Total a pagar: $0");
         
         btnCotizar.addActionListener(e -> {
+            int cantidad = Integer.parseInt(cajaCantidad.getText());
+            if ( cantidad >15) {
+                etiquetaTotal.setText("Total a pagar:$" + (cantidad * 85));
+            } else if (cantidad >= 11) {
+                etiquetaTotal.setText("Total a pagar:$"+ (cantidad*92));
+            } else {
+                 etiquetaTotal.setText("Total a pagar:$" + (cantidad * 99));
+            }
+            
             // TODO 1: Extrae y convierte la cantidad de balones a int
             // TODO 2: Aplica la lógica: >15 ($85), 11-15 ($92), <=10 ($99)
             // TODO 3: Muestra el gran total en etiquetaTotal
